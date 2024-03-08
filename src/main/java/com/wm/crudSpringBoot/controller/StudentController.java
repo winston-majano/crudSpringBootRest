@@ -1,6 +1,5 @@
 package com.wm.crudSpringBoot.controller;
 
-
 import com.wm.crudSpringBoot.Entity.Student;
 import com.wm.crudSpringBoot.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +21,7 @@ public class StudentController {
     }
 
     //TODO: metodo que me devuelve una lista de estudiantes
-    @GetMapping
+    @GetMapping("/")
     public List<Student> getAll() {
         return studentService.getStudents();
     }
